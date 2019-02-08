@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/1819-5ahif-nvs/1819-5ahif-nvs-assignment04-referate-Bizikneidi#readme",
   "dependencies": {
-    "rxjs": "^6.4.0"
+    "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.4.0"
   }
 }
