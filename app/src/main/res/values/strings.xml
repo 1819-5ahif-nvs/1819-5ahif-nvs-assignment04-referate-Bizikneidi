@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">DemoApp</string>
-    <string name="sign_up">Sign up for an account</string>
-    <string name="create_password">Create your password</string>
-    <string name="sign_up_">Sign Up</string>
-    <string name="email_address">Email address</string>
-</resources>
