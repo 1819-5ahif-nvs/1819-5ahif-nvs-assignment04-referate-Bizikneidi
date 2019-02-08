@@ -1,0 +1,22 @@
+{
+  "name": "reactive-clients",
+  "version": "1.0.0",
+  "description": "Referat ReactiveClients 5AHIF 2018/19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1819-5ahif-nvs/1819-5ahif-nvs-assignment04-referate-Bizikneidi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1819-5ahif-nvs/1819-5ahif-nvs-assignment04-referate-Bizikneidi/issues"
+  },
+  "homepage": "https://github.com/1819-5ahif-nvs/1819-5ahif-nvs-assignment04-referate-Bizikneidi#readme",
+  "dependencies": {
+    "rxjs": "^6.4.0"
+  }
+}
