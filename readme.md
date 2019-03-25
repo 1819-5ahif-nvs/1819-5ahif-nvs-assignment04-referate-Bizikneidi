@@ -6,9 +6,50 @@ Ein Referat von Tobias Kneidinger
 
 zum Ausführen im **Project-Root** ausführen!
 
-## Was ist ReactiveX?
+## Reactive Programming
+Bei der reaktiven Programmierung wird mit **Datenflüssen** gearbeitet. Dabei reagieren alle Komponenten, welche mit einem Datenfluss verbunden sind, automatisch auf Änderungen. Dies wird vor allem über **Events, Observables und Streams** realisiert.
 
-*ReactiveX (Reactive Extensions)* ist eine Library, die Entwickler bei der Erstellung von *asynchronen Event-basierten Systemen* unterstützt. Diese Library ist für die meisten gängigen Plattformen und Sprachen verfügbar, wie z.B.:
+Ein praktisches Beispiel:
+
+Ändert sich eine Variable in einer Komponente, wird ein **Event** getriggert. Alle Komponenten, die auf dieses Event **subscribed** sind, erhalten nun **automatisch** den veränderten Wert. Dadurch wird eine maximale **Codeersparnis** erzielt.
+
+## Grundvoraussetzungen für reaktive Programmierung
+Eine Sprache, welche reaktives Programmieren unterstützen soll, muss folgende Grundvoraussetzungen erfüllen:
+* **Asynchronität**
+* **Event-Handling**
+* **Streams of Values**
+
+### Asynchronität
+Der Hauptthread einer Applikation darf nicht blockieren, da ansonsten die User-Experience durch das blockieren des UI gestört wird. Dies kann durch verschiedenste Vorgehensweisen gelöst werden:
+
+#### Callbacks
+Es wird beim Aufruf einer Funktion eine Rückruffunktion übergeben, welche nach der Beendigung des asynchronen Codes aufgerufen wird.
+
+##### Pro
+* Einfach zu schreiben
+* Weit verbeitet
+
+##### Kontra
+* Callback-Hell bei geschachtelten Callbacks
+* Errorhandling bei jedem Callback
+
+#### Promises / Completeable Futures
+
+#### async-await
+
+#### Kotlin Coroutines
+
+### Stream of Values
+"Stream of values" ist eines der weit verbreitetsten Konzepte in der event-basierten Programmierung. Dabei werden Streams erstellt, welche einen oder mehrere Werte liefern können. Diese Streams können auch completed (beendet) werden. Beispiele hierfür in Javascript wären 
+* "setTimeout", 
+* "setInterval" oder auch 
+* "document.addEventListener(...)". 
+
+Dieses Konzept ist eng mit der **ReactiveX** Library verbunden: Hier werden diese **Streams mit Observables kombiniert**.
+
+## ReactiveX
+![ReactiveX-Logo](https://janssend.files.wordpress.com/2018/03/reactivex_logo.png?w=200 "ReactiveX-Logo")
+*ReactiveX (Reactive Extensions)* ist eine Library, die Entwickler bei der Erstellung von **asynchronen, Event-basierten Systemen** unterstützt. Diese Library ist für die meisten gängigen Plattformen und Sprachen verfügbar, wie z.B.:
 * Javascript (RxJS)
 * Java (RxJava)
 * .NET
@@ -35,20 +76,12 @@ setInterval(() => {
 }, 1000);
 ```
 
-Beide Code-Snippets erhöhen jede Sekunde einen Counter und geben diesen auf der Konsole aus. Das RxJS-Beispiel ist hierbei um einiges kürzer und vor allem übersichtlicher.
+Beide Code-Snippets erhöhen jede Sekunde einen Counter und geben diesen auf der Konsole aus. Das RxJS-Beispiel ist hierbei um einiges kürzer und vor allem aussagekräftiger.
 
 ## Warum ReactiveX?
 * Vermeidung der "Callback-Hell" (Schachtelung von Asynchronen Callbacks)
 * Vereinfachung des asynchronen Codes
 * Viele Operatoren auf Streams möglich (map, take, drop, ...)
-
-## Stream of Values
-"Stream of values" ist eines der weit verbreitetsten Konzepte in der event-basierten Programmierung. Dabei werden Streams erstellt, welche einen oder mehrere Werte liefern können. Diese Streams können auch completed (beendet) werden. Beispiele hierfür in Javascript wären 
-* "setTimeout", 
-* "setInterval" oder auch 
-* "document.addEventListener(...)". 
-
-Dieses Konzept ist eng mit der **ReactiveX** Library verbunden: Hier werden diese **Streams mit Observables kombiniert**.
 
 ## Observables
 Observables sind **Blueprints von "Streams of Values"**.  
