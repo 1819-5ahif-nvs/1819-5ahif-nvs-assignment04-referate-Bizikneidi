@@ -24,11 +24,11 @@ Eine Sprache, welche reaktives Programmieren unterstützen soll, muss folgende G
 * **Event-Handling**
 * **Streams of Values**
 
-### Asynchronität
+## Asynchronität
 
 Der Hauptthread einer Applikation darf nicht blockieren, da ansonsten die User-Experience durch das blockieren des UI gestört wird. Dies kann durch verschiedenste Vorgehensweisen gelöst werden:
 
-#### Callbacks
+### Callbacks
 
 Es wird beim Aufruf einer Funktion eine Rückruffunktion übergeben, welche nach der Beendigung des asynchronen Codes aufgerufen wird.
 
