@@ -194,6 +194,12 @@ Es wird im Typescript-File ein Observable angelegt. Auf dieses Observable wird s
 
 Dieses Design macht den Code **extrem gut lesbar** und übernimmt auch automatisch das **Updaten der View**, da durch die automatische Subscription automatisch die Daten an die View weitergeleitet werden. Auch **geschachtelte Subscriptions werden dadurch vermieden**.
 
+## Quellen
+
+* Udemy-Kurs: <https://www.udemy.com/rxjs-course/>
+* Wikipedia: <https://de.wikipedia.org/wiki/Reaktive_Programmierung>
+* Promises vs Callbacks vs Async/Await: <https://medium.com/@ThatGuyTinus/callbacks-vs-promises-vs-async-await-f65ed7c2b9b4>
+
 ## Vorschläge zu Fragen
 
 1. Nenne einige Methoden, um asynchronen Code zu schreiben!
